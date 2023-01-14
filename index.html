@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Calculando el Total</title>
+</head>
+<body>
+    <div class="container">
+        <img class="laptop" src="./assets/img/laptop.png" alt="laptotp">
+        <p>Laptop gamer AMD</p>
+        <input name="input1" id="quanty" type="number" placeholder="Amount" min="1" max="10">
+        <select name="colors" id="colorss" onchange=" color()">
+            <option value="green">green</option>
+            <option value="brown">brown</option>
+            <option value="red">red</option>
+            <option value="yellow">yellow</option>
+        </select>
+        <p>Price: $700.00</p>
+         <button id="btn-total" onclick="calcularTotal ()">Total</button>
+    </div>
+    <div class="container2">
+        <p id="phar_total">Total:$<span id="phar1_total">0</span></p>
+        <p id="phar_amount">Amount:<span id="phar1_amount">0</span></p>
+        <div class="phar-parraf">
+            <p id="phar_color"><span id="spantres">color:</span> </p><div id="circule1" class="circule"></div>
+        </div>
+    </div>
+
+    <script src="./assets/js/index.js">
+    </script>
+</body>
+</html>
